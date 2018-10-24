@@ -8,14 +8,26 @@
 
     <com.example.betatech.alex.WaveView
         android:id="@+id/waveView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ECEFF1"
+        app:fifth_radial_color="#AB47BC"
+        app:first_radial_color="#6A1B9A"
+        app:fourth_radial_color="#9C27B0"
+        app:layout_constraintBottom_toTopOf="@+id/btn_swap_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:square_color="@color/colorPrimary" />
+        app:radial_distance="20dp"
+        app:second_radial_color="#7B1FA2"
+        app:third_radial_color="#8E24AA" />
 
     <Button
         android:id="@+id/btn_setPadding"
@@ -33,16 +45,13 @@
         android:id="@+id/btn_swap_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:layout_marginBottom="32dp"
         android:onClick="swapColorWaveView"
         android:text="Swap color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_reset"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_setPadding"
-        app:layout_constraintTop_toBottomOf="@+id/waveView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/btn_setPadding" />
 
     <Button
         android:id="@+id/btn_reset"

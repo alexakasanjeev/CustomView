@@ -2,5 +2,13 @@
 <resources>
     <declare-styleable name="WaveView">
         <attr name="square_color" format="color"/>
+        <attr name="square_size" format="dimension"/>
+        <!--circle-->
+        <attr name="first_radial_color" format="color"/>
+        <attr name="second_radial_color" format="color"/>
+        <attr name="third_radial_color" format="color"/>
+        <attr name="fourth_radial_color" format="color"/>
+        <attr name="fifth_radial_color" format="color"/>
+        <attr name="radial_distance" format="dimension"/>
     </declare-styleable>
 </resources>
